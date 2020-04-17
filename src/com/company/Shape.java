@@ -1,16 +1,12 @@
 package com.company;
 
-public abstract class Shape {
+public interface Shape {
 
-    private String shapeName;
+    double perimeter();
 
-    public Shape(final String shapeName) {
-        this.shapeName = shapeName;
-    }
+    double getArea();
 
-    public abstract double getArea();
-
-    public String getShapeName() {
-        return shapeName;
+    default void print() {
+        System.out.println("the perimeter is " + perimeter() + " and the Area is " + getArea());
     }
 }
