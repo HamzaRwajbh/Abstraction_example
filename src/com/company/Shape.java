@@ -4,9 +4,9 @@ public interface Shape {
 
     double perimeter();
 
-    double getArea();
+    double area();
 
     default void print() {
-        System.out.println("the perimeter is " + perimeter() + " and the Area is " + getArea());
+        System.out.println("the perimeter is " + perimeter() + " and the Area is " + area());
     }
 }

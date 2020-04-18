@@ -15,7 +15,7 @@ public class Square extends AbstractShape {
     }
 
     @Override
-    public double getArea() {
+    public double area() {
         return Math.pow(base, 2);
     }
 }

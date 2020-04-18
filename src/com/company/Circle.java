@@ -2,18 +2,20 @@ package com.company;
 
 public class Circle extends AbstractShape {
 
+    private double radios;
 
-    public Circle(final String shapeName) {
+    public Circle(final String shapeName, final double radios) {
         super(shapeName);
+        this.radios = radios;
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        return radios * Math.PI;
     }
 
     @Override
-    public double getArea() {
-        return 0;
+    public double area() {
+        return Math.pow(radios, 2) * Math.PI * 2;
     }
 }

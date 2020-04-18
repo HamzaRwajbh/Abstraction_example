@@ -21,7 +21,7 @@ public class Triangle extends AbstractShape {
     }
 
     @Override
-    public double getArea() {
+    public double area() {
         return 0.5 * base * height;
     }
 }
