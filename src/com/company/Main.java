@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("--------------------------Square---------------------------");
         Square square = new Square("square", 2);
-        square.print();
+        System.out.println(square.getDetails());
 
 
     }
